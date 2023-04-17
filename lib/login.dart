@@ -108,6 +108,14 @@ class LoginPage extends StatelessWidget {
                 ),
               ],
             ),
+            Transform.translate(
+              offset: const Offset(0, 110),
+              child: Image.asset(
+                'assets/images/logo.png',
+                scale: 9,
+                width: double.infinity,
+              ),
+            ),
           ],
         ),
       ),
