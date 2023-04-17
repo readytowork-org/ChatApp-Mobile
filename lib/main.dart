@@ -2,7 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import 'config.dart';
-import 'src/app.dart';
+import 'login.dart';
 import 'src/injector.dart';
 
 void main() async {
@@ -19,7 +19,9 @@ void main() async {
         Locale('en'),
         Locale('ja'),
       ],
-      child: App(),
+      child: const MaterialApp(
+        home: LoginPage(),
+      ),
     ),
   );
 }
